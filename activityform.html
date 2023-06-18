@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a href="index.html">Appointment System</a>
+      </div>
+      <ul class="navbar-menu">
+        <li><a href="post.html" target="content-frame">Post</a></li>
+        <li><a href="visitors.html" target="content-frame">Visitors</a></li>
+        <li><a href="officers.html" target="content-frame">Officers</a></li>
+        <li><a href="workdays.html" target="content-frame">WorkDays</a></li>
+        <li><a href="activity.html" target="content-frame">Activity</a></li>
+      </ul>
+    </nav>
+    <div id="create-form" style="display: block">
+      <h2>Create Appointment</h2>
+      <form>
+        <label for="officer-id">Officer ID:</label>
+        <input type="text" id="officer-id" name="officer-id" required /><br />
+
+        <label for="visitor-id">Visitor ID:</label>
+        <input type="text" id="visitor-id" name="visitor-id" required /><br />
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="type" required /><br />
+
+        <label for="status">Status:</label>
+        <input type="text" id="status" name="status" required /><br />
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required /><br />
+
+        <label for="start-time">Start Time:</label>
+        <input type="time" id="start-time" name="start-time" required /><br />
+
+        <label for="end-time">End Time:</label>
+        <input type="time" id="end-time" name="end-time" required /><br />
+
+        <label for="added-on">Added On:</label>
+        <input type="text" id="added-on" name="added-on" required /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a href="index.html">Appointment System</a>
+      </div>
+      <ul class="navbar-menu">
+        <li><a href="post.html" target="content-frame">Post</a></li>
+        <li><a href="visitors.html" target="content-frame">Visitors</a></li>
+        <li><a href="officers.html" target="content-frame">Officers</a></li>
+        <li><a href="workdays.html" target="content-frame">WorkDays</a></li>
+        <li><a href="activity.html" target="content-frame">Activity</a></li>
+      </ul>
+    </nav>
+
+    <table>
+      <thead>
+        <tr>
+          <th>OfficerId</th>
+          <th>VisitorId</th>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Status</th>
+          <th>Date</th>
+          <th>StartTime</th>
+          <th>EndTime</th>
+          <th>AddedOn</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>101</td>
+          <td>666</td>
+          <td>John Doe</td>
+          <td>
+            <select name="">
+              <option>Leave</option>
+              <option>Break</option>
+              <option>Appointment</option>
+            </select>
+          </td>
+          <td>Deactivated</td>
+          <td>24/04/2022</td>
+          <td>10:00AM</td>
+          <td>5:00pm</td>
+          <td>24/01/2021</td>
+          <td>
+            <button class="action-btn edit-btn">Update</button>
+            <!-- <button class="action-btn activate-btn">Activate</button>
+            <button class="action-btn deactivate-btn">Deactivate</button> -->
+          </td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>667</td>
+          <td>Jane Smith</td>
+          <td>
+            <select name="">
+              <option>Leave</option>
+              <option>Break</option>
+              <option>Appointment</option>
+            </select>
+          </td>
+          <td>Active</td>
+          <td>24/04/2022</td>
+          <td>11:00AM</td>
+          <td>6:00PM</td>
+
+          <td>01/01/2022</td>
+          <td>
+            <button class="action-btn edit-btn">Update</button>
+            <!-- <button class="action-btn activate-btn">Activate</button>
+                <button class="action-btn deactivate-btn">Deactivate</button>   -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="create" onclick="redirectToForm()">Create</button>
+    <script>
+      function redirectToForm() {
+        window.location.href = "activityform.html";
+      }
+    </script>
+  </body>
+</html>
